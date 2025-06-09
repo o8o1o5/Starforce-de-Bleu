@@ -1,0 +1,4 @@
+name: Starforce de Bleu
+version: '1.0-SNAPSHOT'
+main: dev.o8o1o5.starforceDeBleu.StarforceDeBleu
+api-version: '1.21'
