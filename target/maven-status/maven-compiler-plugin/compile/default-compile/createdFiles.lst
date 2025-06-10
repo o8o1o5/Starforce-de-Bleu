@@ -1,5 +1,8 @@
-dev\o8o1o5\starforceDeBleu\command\StarforceCommand.class
 dev\o8o1o5\starforceDeBleu\StarforceDeBleu.class
 dev\o8o1o5\starforceDeBleu\util\StarforceDataUtil.class
-dev\o8o1o5\starforceDeBleu\listener\SwordListener.class
 dev\o8o1o5\starforceDeBleu\util\StarforceLoreUtil.class
+dev\o8o1o5\starforceDeBleu\command\StarforceCommand.class
+dev\o8o1o5\starforceDeBleu\manager\GuiManager.class
+dev\o8o1o5\starforceDeBleu\listener\starforceListener\ArmorListener.class
+dev\o8o1o5\starforceDeBleu\listener\starforceListener\SwordListener.class
+dev\o8o1o5\starforceDeBleu\listener\AnvilInteractListener.class

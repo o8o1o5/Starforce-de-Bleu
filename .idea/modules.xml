@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Starforce_de_Bleu.iml" filepath="$PROJECT_DIR$/Starforce_de_Bleu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StarforceDeBleu.iml" filepath="$PROJECT_DIR$/StarforceDeBleu.iml" />
     </modules>
   </component>
 </project>

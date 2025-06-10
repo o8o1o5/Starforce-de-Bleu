@@ -1,4 +1,4 @@
-package dev.o8o1o5.starforceDeBleu.listener;
+package dev.o8o1o5.starforceDeBleu.listener.starforceListener;
 
 import dev.o8o1o5.starforceDeBleu.util.StarforceDataUtil;
 import org.bukkit.entity.Player;
@@ -17,7 +17,7 @@ public class SwordListener implements Listener {
         Player player = (Player) event.getDamager();
         ItemStack heldItem = player.getInventory().getItemInMainHand();
 
-        if (heldItem == null || heldItem.getType().isAir()) {
+        if (heldItem == null || heldItem.getType().isAir() || !heldItem.getType().name().endsWith("_SWORD")) {
             return;
         }
 
