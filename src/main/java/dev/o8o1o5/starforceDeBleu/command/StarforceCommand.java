@@ -1,7 +1,8 @@
 package dev.o8o1o5.starforceDeBleu.command;
 
 import dev.o8o1o5.starforceDeBleu.StarforceDeBleu;
-import dev.o8o1o5.starforceDeBleu.util.StarforceLoreUtil;
+import dev.o8o1o5.starforceDeBleu.util.ItemLoreDisplayUtil;
+import dev.o8o1o5.starforceDeBleu.util.StarforceStarLoreUtil;
 import dev.o8o1o5.starforceDeBleu.util.StarforceDataUtil;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.command.Command;
@@ -94,7 +95,7 @@ public class StarforceCommand implements CommandExecutor, TabCompleter {
                         return true;
                     }
                     StarforceDataUtil.setStars(handItem, stars);
-                    StarforceLoreUtil.updateStarforceLore(handItem, stars);
+                    ItemLoreDisplayUtil.updateItemLore(handItem, stars);
                     player.sendMessage(ChatColor.GREEN + handItem.getType().name() + " 아이템의 스타포스 레벨이 " + stars + "(으)로 설정되었습니다.");
                 } catch (NumberFormatException e) {
                     player.sendMessage(ChatColor.RED + "유효한 숫자를 입력하세요.");

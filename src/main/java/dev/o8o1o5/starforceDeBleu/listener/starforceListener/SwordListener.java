@@ -1,6 +1,7 @@
 package dev.o8o1o5.starforceDeBleu.listener.starforceListener;
 
 import dev.o8o1o5.starforceDeBleu.util.StarforceDataUtil;
+import dev.o8o1o5.starforceDeBleu.util.calculator.SwordCalculator;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -27,28 +28,11 @@ public class SwordListener implements Listener {
             return;
         }
 
-        double additionalDamage;
+        double additionalDamage = SwordCalculator.getAdditionalDamage(heldItem, stars);
+        double additionalDamagePercentage = SwordCalculator.getAdditionalDamagePercentage(heldItem, stars);
 
-        if (stars <= 5) {
-            additionalDamage = stars * 0.2;
-        } else if (stars <= 10) {
-            additionalDamage = (5 * 0.2) + ((stars - 5) * 0.3);
-        } else if (stars <= 15) {
-            additionalDamage = (5 * 0.2) + (5 * 0.3) + ((stars - 10) * 0.4);
-        } else if (stars <= 20) {
-            additionalDamage = (5 * 0.2) + (5 * 0.3) + (5 * 0.4) + ((stars - 15) * 0.5);
-        } else {
-            additionalDamage = (5 * 0.2) + (5 * 0.3) + (5 * 0.4) + (5 * 0.5) + ((stars - 20) * 0.6);
-        }
+        double calculatedDamage = additionalDamagePercentage * (event.getDamage() + additionalDamage);
 
-        double addtionalDamagePercentage = 1.0;
-        int currentStars = stars;
-
-        while (currentStars > 5) {
-            addtionalDamagePercentage += 0.016;
-            currentStars -= 5;
-        }
-
-        event.setDamage(addtionalDamagePercentage * (event.getDamage() + additionalDamage));
+        event.setDamage(calculatedDamage);
     }
 }
