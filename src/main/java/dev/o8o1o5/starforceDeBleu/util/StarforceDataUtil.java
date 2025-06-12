@@ -56,12 +56,25 @@ public class StarforceDataUtil {
     }
 
     public static void setStars(ItemStack item, int stars) {
-        if (item == null || !item.hasItemMeta()) {
+        if (item == null) {
             return;
         }
-        ItemMeta meta = item.getItemMeta();
+
+        ItemMeta meta;
+        if (!item.hasItemMeta()) {
+            meta = Bukkit.getItemFactory().getItemMeta(item.getType());
+            if (meta == null) {
+                return;
+            }
+            item.setItemMeta(meta);
+        } else {
+            meta = item.getItemMeta();
+        }
+
         meta.getPersistentDataContainer().set(STARFORCE_STARS_KEY, PersistentDataType.INTEGER, stars);
         item.setItemMeta(meta);
+
+        ItemLoreDisplayUtil.updateItemLore(item, stars);
     }
 
     public static int getStars(ItemStack item) {

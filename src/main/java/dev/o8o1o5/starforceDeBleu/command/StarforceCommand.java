@@ -95,7 +95,6 @@ public class StarforceCommand implements CommandExecutor, TabCompleter {
                         return true;
                     }
                     StarforceDataUtil.setStars(handItem, stars);
-                    ItemLoreDisplayUtil.updateItemLore(handItem, stars);
                     player.sendMessage(ChatColor.GREEN + handItem.getType().name() + " 아이템의 스타포스 레벨이 " + stars + "(으)로 설정되었습니다.");
                 } catch (NumberFormatException e) {
                     player.sendMessage(ChatColor.RED + "유효한 숫자를 입력하세요.");
