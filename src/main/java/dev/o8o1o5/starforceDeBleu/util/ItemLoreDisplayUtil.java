@@ -43,11 +43,19 @@ public class ItemLoreDisplayUtil {
                 removedAnyLine = true;
                 continue; // 이 줄 제거
             }
-            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_DAMAGE_LORE_SURFIX))) {
+            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_ADDITIONAL_DAMAGE_LORE_SURFIX))) {
                 removedAnyLine = true;
                 continue;
             }
-            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_DAMAGE_PERCENT_LORE_SURFIX))) {
+            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_ADDITIONAL_DAMAGE_PERCENTAGE_LORE_SURFIX))) {
+                removedAnyLine = true;
+                continue;
+            }
+            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_REDUCIBLE_DAMAGE_LORE_SURFIX))) {
+                removedAnyLine = true;
+                continue;
+            }
+            if (strippedLine.contains(ChatColor.stripColor(StarforceAttributeLoreUtil.ATTRIBUTE_REDUCIBLE_DAMAGE_PERCENTAGE_LORE_SURFIX))) {
                 removedAnyLine = true;
                 continue;
             }

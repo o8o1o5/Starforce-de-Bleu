@@ -1,5 +1,6 @@
 package dev.o8o1o5.starforceDeBleu.util;
 
+import dev.o8o1o5.starforceDeBleu.util.calculator.ArmorCalculator;
 import dev.o8o1o5.starforceDeBleu.util.calculator.SwordCalculator;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -9,8 +10,10 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.List;
 
 public class StarforceAttributeLoreUtil {
-    public static final String ATTRIBUTE_DAMAGE_LORE_SURFIX = ChatColor.GOLD + "추가 피해";
-    public static final String ATTRIBUTE_DAMAGE_PERCENT_LORE_SURFIX = ChatColor.GOLD + "추가 피해 배율";
+    public static final String ATTRIBUTE_ADDITIONAL_DAMAGE_LORE_SURFIX = ChatColor.GOLD + "추가 피해";
+    public static final String ATTRIBUTE_ADDITIONAL_DAMAGE_PERCENTAGE_LORE_SURFIX = ChatColor.GOLD + "추가 피해 배율";
+    public static final String ATTRIBUTE_REDUCIBLE_DAMAGE_LORE_SURFIX = ChatColor.GOLD + "받는 피해 감소";
+    public static final String ATTRIBUTE_REDUCIBLE_DAMAGE_PERCENTAGE_LORE_SURFIX = ChatColor.GOLD + "받는 피해 감소 배율";
 
     public static void addAttributeLore(ItemStack item, int stars) {
         ItemMeta meta = item.getItemMeta();
@@ -37,13 +40,31 @@ public class StarforceAttributeLoreUtil {
             String formattedAddPercentage = String.format("%.1f", (additionalDamagePercentage - 1.0) * 100);
 
             if (additionalDamage > 0) {
-                lore.add(" " + ChatColor.GOLD + formattedAddDamage + " " + ATTRIBUTE_DAMAGE_LORE_SURFIX);
+                lore.add(" " + ChatColor.GOLD + formattedAddDamage + " " + ATTRIBUTE_ADDITIONAL_DAMAGE_LORE_SURFIX);
             }
 
             if (additionalDamagePercentage > 1.0) {
-                lore.add(" " + ChatColor.GOLD + formattedAddPercentage + "%" + " " + ATTRIBUTE_DAMAGE_PERCENT_LORE_SURFIX);
+                lore.add(" " + ChatColor.GOLD + formattedAddPercentage + "% " + ATTRIBUTE_ADDITIONAL_DAMAGE_PERCENTAGE_LORE_SURFIX);
             }
         }
+
+        if (type.name().endsWith("_HELMET") || type.name().endsWith("_CHESTPLATE") ||
+                type.name().endsWith("_LEGGINGS") || type.name().endsWith("_BOOTS")) {
+            double reducibleDamage = ArmorCalculator.getReducibleDamage(item, stars);
+            double reducibleDamagePercentage = ArmorCalculator.getReducibleDamagePercentage(item, stars);
+
+            String formattedReduceDamage = String.format("%.1f", reducibleDamage);
+            String formattedReduceDamagePercentage = String.format("%.1f", (reducibleDamagePercentage) * 100);
+
+            if (reducibleDamage > 0) {
+                lore.add(" " + ChatColor.GOLD + formattedReduceDamage + " " + ATTRIBUTE_REDUCIBLE_DAMAGE_LORE_SURFIX);
+            }
+
+            if (reducibleDamagePercentage > 0) {
+                lore.add(" " + ChatColor.GOLD + formattedReduceDamagePercentage + "% " + ATTRIBUTE_REDUCIBLE_DAMAGE_PERCENTAGE_LORE_SURFIX);
+            }
+        }
+
 
         meta.setLore(lore);
         item.setItemMeta(meta);

@@ -24,7 +24,7 @@ public class SwordCalculator {
         double additionalDamagePercentage = 1.0;
         int currentStars = stars;
 
-        while (currentStars > 5) {
+        while (currentStars >= 5) {
             additionalDamagePercentage += 0.016;
             currentStars -= 5;
         }

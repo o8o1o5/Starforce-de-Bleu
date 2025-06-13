@@ -1,6 +1,7 @@
 package dev.o8o1o5.starforceDeBleu.listener.starforceListener;
 
 import dev.o8o1o5.starforceDeBleu.util.StarforceDataUtil;
+import dev.o8o1o5.starforceDeBleu.util.calculator.ArmorCalculator;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -36,18 +37,21 @@ public class ArmorListener implements Listener {
             return;
         }
 
-        int starSum = helmetStars + chestplateStars + leggingsStars + bootsStars;
+        double helmetReducibleDamage = ArmorCalculator.getReducibleDamage(helmetItem, helmetStars);
+        double chestplateReducibleDamage = ArmorCalculator.getReducibleDamage(chestplateItem, chestplateStars);
+        double leggingsReducibleDamage = ArmorCalculator.getReducibleDamage(leggingsItem, leggingsStars);
+        double bootsReducibleDamage = ArmorCalculator.getReducibleDamage(bootsItem, bootsStars);
 
-        double reducedDamage = event.getDamage() - starSum * 0.1;
+        double helmetReducibleDamagePercentage = ArmorCalculator.getReducibleDamagePercentage(helmetItem, helmetStars);
+        double chestplateReducibleDamagePercentage = ArmorCalculator.getReducibleDamagePercentage(chestplateItem, chestplateStars);
+        double leggingsReducibleDamagePercentage = ArmorCalculator.getReducibleDamagePercentage(leggingsItem, leggingsStars);
+        double bootsReducibleDamagePercentage = ArmorCalculator.getReducibleDamagePercentage(bootsItem, bootsStars);
 
-        double reducedDamagePercentage = 1.0;
-        int currentStarSum = starSum;
+        double reducibleDamageSum = helmetReducibleDamage + chestplateReducibleDamage + leggingsReducibleDamage + bootsReducibleDamage;
+        double reducibleDamagePercentageSum = 1.0 - (helmetReducibleDamagePercentage + chestplateReducibleDamagePercentage + leggingsReducibleDamagePercentage + bootsReducibleDamagePercentage);
 
-        while (currentStarSum > 5) {
-            reducedDamagePercentage -= 0.002;
-            currentStarSum -= 5;
-        }
+        double calculatedDamage = reducibleDamagePercentageSum * Math.max(event.getDamage() - reducibleDamageSum, 0);
 
-        event.setDamage(reducedDamage * reducedDamagePercentage);
+        event.setDamage(calculatedDamage);
     }
 }

@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]" date="1749772060979" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 2025-06-13 오전 8:47 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/dev/o8o1o5/starforceDeBleu/manager/GuiManager.class" />
+    <option name="AFTER_PATH" value="target/classes/dev/o8o1o5/starforceDeBleu/manager/GuiManager.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]/GuiManager.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/StarforceDeBleu-1.0-SNAPSHOT-shaded.jar" />
+    <option name="AFTER_PATH" value="target/StarforceDeBleu-1.0-SNAPSHOT-shaded.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]/StarforceDeBleu-1.0-SNAPSHOT-shaded.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/StarforceDeBleu-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="target/StarforceDeBleu-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]/StarforceDeBleu-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/original-StarforceDeBleu-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="target/original-StarforceDeBleu-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2025-06-13_오전_8_47_[Changes]/original-StarforceDeBleu-1.0-SNAPSHOT.jar" />
+  </binary>
+</changelist>

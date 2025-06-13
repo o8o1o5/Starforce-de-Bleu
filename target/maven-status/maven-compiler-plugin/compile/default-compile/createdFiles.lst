@@ -7,6 +7,7 @@ dev\o8o1o5\starforceDeBleu\util\ItemBuilder.class
 dev\o8o1o5\starforceDeBleu\util\ItemLoreDisplayUtil.class
 dev\o8o1o5\starforceDeBleu\manager\StarforceManager.class
 dev\o8o1o5\starforceDeBleu\command\StarforceCommand.class
+dev\o8o1o5\starforceDeBleu\util\calculator\ArmorCalculator.class
 dev\o8o1o5\starforceDeBleu\util\StarforceAttributeLoreUtil.class
 dev\o8o1o5\starforceDeBleu\gui\StarforceGUI.class
 dev\o8o1o5\starforceDeBleu\listener\starforceListener\ArmorListener.class

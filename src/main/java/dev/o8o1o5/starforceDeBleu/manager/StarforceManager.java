@@ -35,7 +35,7 @@ public class StarforceManager {
             StarforceDataUtil.setStars(resultItem, StarforceDataUtil.getStars(item) + 1);
             player.sendMessage(ChatColor.GREEN + "강화 성공! 아이템의 스타포스가 " + StarforceDataUtil.getStars(resultItem) + "성이 되었습니다.");
         } else if (roll <= currentLevel.getSuccessRate() + currentLevel.getFailRate()) {
-            if (currentStars <= 10) {
+            if (currentStars <= 10 || currentStars == 15 || currentStars == 20) {
                 player.sendMessage(ChatColor.RED + "강화 실패! 아이템의 스타포스가 유지됩니다.");
             } else {
                 int newStars = Math.max(0, StarforceDataUtil.getStars(item) - 1);

@@ -1,0 +1,128 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"CompilerConfiguration\">\r\n    <annotationProcessing>\r\n      <profile name=\"Maven default annotation processors profile\" enabled=\"true\">\r\n        <sourceOutputDir name=\"target/generated-sources/annotations\" />\r\n        <sourceTestOutputDir name=\"target/generated-test-sources/test-annotations\" />\r\n        <outputRelativeToContentRoot value=\"true\" />\r\n        <module name=\"StarforceDeBleu\" />\r\n      </profile>\r\n    </annotationProcessing>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+--- a/.idea/compiler.xml	(revision 9a72440fd463d6da1de9b5a977b1114b819ada32)
++++ b/.idea/compiler.xml	(date 1749606154594)
+@@ -6,6 +6,7 @@
+         <sourceOutputDir name="target/generated-sources/annotations" />
+         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+         <outputRelativeToContentRoot value="true" />
++        <module name="Starforce_de_Bleu" />
+         <module name="StarforceDeBleu" />
+       </profile>
+     </annotationProcessing>
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 9a72440fd463d6da1de9b5a977b1114b819ada32)
++++ b/.idea/vcs.xml	(date 1749772056722)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>C:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\command\\StarforceCommand.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\listener\\AnvilInteractListener.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\listener\\starforceListener\\ArmorListener.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\listener\\starforceListener\\SwordListener.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\manager\\GuiManager.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\StarforceDeBleu.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\util\\StarforceDataUtil.java\r\nC:\\miku\\minecraft\\plugin\\Starforce-de-Bleu\\src\\main\\java\\dev\\o8o1o5\\starforceDeBleu\\util\\StarforceLoreUtil.java\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+--- a/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(revision 9a72440fd463d6da1de9b5a977b1114b819ada32)
++++ b/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst	(date 1749615732110)
+@@ -1,8 +1,8 @@
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\command\StarforceCommand.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\AnvilInteractListener.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\starforceListener\ArmorListener.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\starforceListener\SwordListener.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\manager\GuiManager.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\StarforceDeBleu.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\util\StarforceDataUtil.java
+-C:\miku\minecraft\plugin\Starforce-de-Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\util\StarforceLoreUtil.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\command\StarforceCommand.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\AnvilInteractListener.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\starforceListener\ArmorListener.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\listener\starforceListener\SwordListener.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\manager\GuiManager.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\StarforceDeBleu.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\util\StarforceDataUtil.java
++C:\miku\Starforce de Bleu\src\main\java\dev\o8o1o5\starforceDeBleu\util\StarforceLoreUtil.java
+Index: src/main/java/dev/o8o1o5/starforceDeBleu/manager/GuiManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package dev.o8o1o5.starforceDeBleu.manager;\r\n\r\nimport org.bukkit.Bukkit;\r\nimport org.bukkit.inventory.Inventory;\r\n\r\npublic class GuiManager {\r\n    public static Inventory getStarforceGUI() {\r\n        Inventory starforceGUI = Bukkit.createInventory(null, 27, \"스타포스 강화\");\r\n\r\n\r\n        return starforceGUI;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/dev/o8o1o5/starforceDeBleu/manager/GuiManager.java b/src/main/java/dev/o8o1o5/starforceDeBleu/manager/GuiManager.java
+--- a/src/main/java/dev/o8o1o5/starforceDeBleu/manager/GuiManager.java	(revision 9a72440fd463d6da1de9b5a977b1114b819ada32)
++++ b/src/main/java/dev/o8o1o5/starforceDeBleu/manager/GuiManager.java	(date 1749616354736)
+@@ -1,12 +1,33 @@
+ package dev.o8o1o5.starforceDeBleu.manager;
+ 
+ import org.bukkit.Bukkit;
++import org.bukkit.Material;
++import org.bukkit.enchantments.Enchantment;
+ import org.bukkit.inventory.Inventory;
++import org.bukkit.inventory.ItemFlag;
++import org.bukkit.inventory.ItemStack;
++import org.bukkit.inventory.meta.ItemMeta;
+ 
+ public class GuiManager {
+     public static Inventory getStarforceGUI() {
+-        Inventory starforceGUI = Bukkit.createInventory(null, 27, "스타포스 강화");
++        Inventory starforceGUI = Bukkit.createInventory(null, 36, "스타포스 강화");
++
++        ItemStack confirmItem = new ItemStack(Material.NETHER_STAR);
++        ItemMeta confirmMeta = confirmItem.getItemMeta();
++        confirmMeta.setDisplayName("스타포스 강화");
++        confirmMeta.addEnchant(Enchantment.UNBREAKING, 1, true);
++        confirmMeta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
++        confirmMeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
++        confirmItem.setItemMeta(confirmMeta);
+ 
++        ItemStack changeItem = new ItemStack(Material.MAGENTA_GLAZED_TERRACOTTA);
++        ItemMeta changeMeta = changeItem.getItemMeta();
++        changeMeta.setDisplayName("강화 확률: XX%");
++        changeMeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
++        changeItem.setItemMeta(changeMeta);
++
++        starforceGUI.setItem(22, confirmItem);
++        starforceGUI.setItem(13, changeItem);
+ 
+         return starforceGUI;
+     }
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/StarforceDeBleu.iml\" filepath=\"$PROJECT_DIR$/StarforceDeBleu.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision 9a72440fd463d6da1de9b5a977b1114b819ada32)
++++ b/.idea/modules.xml	(date 1749606154587)
+@@ -3,6 +3,7 @@
+   <component name="ProjectModuleManager">
+     <modules>
+       <module fileurl="file://$PROJECT_DIR$/StarforceDeBleu.iml" filepath="$PROJECT_DIR$/StarforceDeBleu.iml" />
++      <module fileurl="file://$PROJECT_DIR$/Starforce_de_Bleu.iml" filepath="$PROJECT_DIR$/Starforce_de_Bleu.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
